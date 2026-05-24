@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_add_reminder"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_medication"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary" />
+
+        <Spinner
+            android:id="@+id/spinnerMedicamento"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_input"
+            android:paddingHorizontal="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_medication_time"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_week_days"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_input"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <CheckBox
+                android:id="@+id/cbLunes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/day_monday"
+                android:textColor="@color/text_primary" />
+
+            <CheckBox
+                android:id="@+id/cbMartes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/day_tuesday"
+                android:textColor="@color/text_primary" />
+
+            <CheckBox
+                android:id="@+id/cbMiercoles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/day_wednesday"
+                android:textColor="@color/text_primary" />
+
+            <CheckBox
+                android:id="@+id/cbJueves"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/day_thursday"
+                android:textColor="@color/text_primary" />
+
+            <CheckBox
+                android:id="@+id/cbViernes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/day_friday"
+                android:textColor="@color/text_primary" />
+
+            <CheckBox
+                android:id="@+id/cbSabado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/day_saturday"
+                android:textColor="@color/text_primary" />
+
+            <CheckBox
+                android:id="@+id/cbDomingo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/day_sunday"
+                android:textColor="@color/text_primary" />
+
+            <Button
+                android:id="@+id/btnTodosLosDias"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_button_secondary"
+                android:text="@string/btn_all_days"
+                android:textAllCaps="false"
+                android:textColor="@color/text_primary" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_start_date"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary" />
+
+        <Button
+            android:id="@+id/btnSeleccionarFecha"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_button_secondary"
+            android:text="@string/btn_select_date"
+            android:textAllCaps="false"
+            android:textColor="@color/text_primary" />
+
+        <TextView
+            android:id="@+id/tvFechaSeleccionada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_date_selected"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="@drawable/bg_input"
+            android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="@string/btn_save_reminder"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/surface_color" />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_button_secondary"
+            android:text="@string/btn_cancel"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary" />
+
+    </LinearLayout>
+
+</ScrollView>
+

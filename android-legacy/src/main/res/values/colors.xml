@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#007AFF</color>
+    <color name="background_color">#F5F5F7</color>
+    <color name="surface_color">#FFFFFF</color>
+    <color name="text_primary">#111111</color>
+    <color name="text_secondary">#6E6E73</color>
+    <color name="border_color">#D2D2D7</color>
+    <color name="success_color">#34C759</color>
+    <color name="danger_color">#FF3B30</color>
+</resources>

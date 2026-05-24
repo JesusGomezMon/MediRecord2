@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="treatment_days_suffix">
+        <item quantity="one"> (Tratamiento de %d día)</item>
+        <item quantity="other"> (Tratamiento de %d días)</item>
+    </plurals>
+</resources>
